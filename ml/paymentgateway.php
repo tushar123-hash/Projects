@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Payment Gateway</title>
-</head>
-<body>
-
-</body>
-</html>
