@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>MEALTAIN INN</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<!-- CSS link -->
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<!-- Link to Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- ============== Navigation Bar ============== -->
+
+<header id="header">
+
+<h1> MEALTRAIN INN </h1>
+
+ <nav id="navbar" class="flex">
+	<!-- Options in navbar -->
+	<a href="index.php">Home</a>
+	<a href="about/about.php">About</a>
+	<a href="#section-3">Menu</a>
+	<a href="#section-4">Service</a>
+	<a href="#section-5">Blog</a>
+	<a href="#section-7">Contact</a>
+
+	
+</nav>	
+
+	<div id="navIcon" class="barIcon" onclick="dropDown()">
+		<i class="fas fa-bars"></i>		
+	</div>	
+
+</header>
+
+<!-- ============== Navigation Bar End ============== -->
+
+
+
+<!-- ============== Section-1 ( Welcome section ) ============== -->
+
+<section id="section-1" class="flex">
+
+	<div id="onboard" class="intro">
+		<p id="anim">W</p>
+		<p>Enjoy and be delightful !</p>
+	</div>
+
+	<div id="offer" class="intro">
+		<p>Get 15% off</p>
+		<p>Beat your Hunger! Order Now!</p>
+	</div>
+
+</section>
+
+<!-- ============== Section-1 ( Welcome section ) End ============== -->
+
+
+
+<!-- ============== Section-2 ( Offer section) ============== -->
+
+<section id="section-2"  class="space-padding">
+
+<h2>We Offer</h2>
+	
+	<div id="section-box" class="margin">
+
+	<a href="#section-3">
+		<div  class="items-box">
+			<img src="image/07_image.jpg">
+			<h5>#Barbeque</h5>
+		</div>
+	</a>
+
+
+	<a href="#section-4">
+		<div  class="items-box">
+			<img src="image/02_image.jpg">
+			<h5>#OnlineRoomBooking</h5>
+		</div>
+	</a>
+
+	<a href="#section-3">
+		<div  class="items-box">
+			<img src="image/03_image.jpg">
+			<h5>#Bakery</h5>
+		</div>
+
+	</a>
+
+	<a href="#section-4">
+		<div  class="items-box">
+			<img src="image/04_image.jpg">
+			<h5>#OnlineFoodDelivery</h5>
+		</div>
+	</a>
+
+	<a href="#footer">
+		<div  class="items-box">
+			<img src="image/05_image.jpg">
+			<h5>#NearAirport</h5>
+		</div>
+	</a>
+
+	<a href="#section-3">
+		<div  class="items-box">
+			<img src="image/08_image.jpg">
+			<h5>#PlaceForPizzaLover</h5>
+		</div>
+	</a>
+
+	</div>
+
+</section>
+
+<!-- ============== Section-2 ( Offer Section) End ============== -->
+
+
+
+<!-- ============== Section-3 ( Menu section) ============== -->
+
+<section id="section-3" class="space-padding flex margin">
+
+	<!-- auto slide show -->
+	<div id="picture-show"> </div>
+
+	<!-- menu category -->
+	<div id="menu">
+		<h2>Menu</h2>
+		<div id="menu-items" class="margin">
+			<div id="dinbtn" class="item-btn">Dinner</div>
+			<div id="lncbtn" class="item-btn">Lunch</div>
+			<div id="strbtn" class="item-btn">Starter</div>
+			<div id="swtbtn" class="item-btn">Sweets</div>
+			<div id="spcbtn" class="item-btn">Special</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- ============== Section-3 ( Menu section ) End ============== -->
+
+
+
+<!-- ============== Section-4 ( Online Service section ) ============== -->
+
+<section id="section-4" class="space-padding">
+
+	<div id="booking-section" class="flex margin">
+
+		<!-- Food Order Option -->
+		<a href="cart/orderFood.php" class="btn-box">
+			<div id="online-order" >
+			Order Food
+			</div>
+		</a>
+		
+
+		<!-- Table Booking Option -->
+		<a href="t_reservation/reserveTable.php" class="btn-box">
+			<div id="room-booking">
+			Bespoke Table
+			</div>
+		</a>		
+
+
+		<!-- Room Booking Option -->
+		<a href="r_reservation/reserveRoom.php" class="btn-box">
+			<div id="room-booking">
+			Bespoke Room
+			</div>
+		</a>
+
+	</div>
+
+</section>
+
+<!-- ============== Section-4 (Online service section ) End ============== -->
+
+
+
+<!-- ============== Section-5 ( Blog And Recommendations, Advertisement ) ============== -->
+
+<section id="section-5" class="space-padding flex margin">
+	<!-- Recommendation -->
+	<div id="blog-list" class="">
+		
+		<div id="blog-heading">Blog And Recommendation</div>
+		
+		<div class="blog-list-items" style="margin-top: 0px;">
+			<img src="image/02_image.jpg">
+			<p>This first blog</p>
+		</div>
+		
+		<div class="blog-list-items">
+			<img src="image/02_image.jpg">
+			<p>This first blog</p>
+		</div>
+		
+		<div class="blog-list-items">
+			<img src="image/02_image.jpg">
+			<p>This first blog</p>
+		</div>
+
+		<div class="blog-list-items">
+			<img src="image/02_image.jpg">
+			<p>This first blog</p>
+		</div>
+
+		<div class="blog-list-items">
+			<img src="image/02_image.jpg">
+			<p>This firslog</p>
+		</div>
+
+	</div>
+
+
+	<!-- Blog posts  -->
+	<div id="blog-post">
+		<div class="blog-item">
+			<img src="image/02_image.jpg">
+			<p>Peoples choice restaurent <a href="#"> read more...</a></p>	
+		</div>
+		
+		<div class="blog-item">
+			<img src="image/02_image.jpg">
+			<p>Peoples choice restaurent <a href="#"> read more...</a></p>	
+		</div>
+		
+		<div class="blog-item">
+			<img src="image/02_image.jpg">
+			<p>Peoples choice restaurent <a href="#"> read more...</a></p>	
+		</div>
+		
+		<div class="blog-item">
+			<img src="image/02_image.jpg">
+			<p>Peoples choice restaurent <a href="#"> read more...</a></p>	
+		</div>	
+	</div>
+
+
+
+	<!-- Advertisement -->
+	<div id="advertise">
+	<a href="#" >
+			<h2> Advertisement </h2>
+			<img src="image/21_image.png">
+			<p>Advertisement details goes here.</p>
+	</a>		
+	</div>
+
+
+</section>
+
+<!-- ============== Section-5 ( Blog And Recommendations, Advertisement ) End ============== -->
+
+
+
+<!-- ============== Section-6 ( Team Mates section ) ============== -->
+
+<section id="section-6" class="space-padding">
+	<h1 align="center" style="padding-bottom: 1em;">Team Mates</h1>
+	
+	<div id="team-info-box" class="margin">
+		
+		<div class="info chef1">
+			<div class="margin">
+			<p>Roger Smith</p>
+			<p>Sr. Chef</p>
+			</div>
+		</div>
+
+		<div class="info chef2">
+			<div class="margin">
+			<p>Roger Smith</p>
+			<p>Sr. Chef</p>
+			</div>
+		</div>
+
+		<div class="info chef3">
+			<div>
+			<p>Roger Smith</p>
+			<p>Sr. Chef</p>
+			</div>
+		</div>
+
+		<div class="info chef4">
+			<div>
+			<p>Roger Smith</p>
+			<p>Sr. Chef</p>
+			</div>
+		</div>
+
+		<div class="info chef5">
+			<div>
+			<p>Roger Smith</p>
+			<p>Sr. Chef</p>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<!-- ============== Section-6 ( Team Mate section ) End ============== -->
+
+
+
+<!-- ============== Section-7 ( Contact section ) ============== -->
+
+<section id="section-7" class="space-padding flex">
+
+    <aside id="contact-block" class="flex">
+    
+    <!-- ----------- Contact block ------------- -->
+    <h3> Contact </h3>
+    
+    <form>
+    
+      <div>
+        <input type="text" name="cEml" placeholder="Email" required="required">
+      </div>
+      
+      <div>
+        <textarea rows="8" placeholder="Describe your issue" required="required"></textarea>
+      </div>
+      
+      <div>
+        <input id="submit-btn" type="submit" name="sendBtn" value="send">
+      </div>      
+    
+    </form>      
+    
+    </aside>
+
+
+<!-- --------- Map Block ---------- -->
+    <aside id="map-block" class="flex">
+
+      <div id="GoToTopBtn">
+        <a href="#section-1">Go to top</a>
+      </div>
+
+      <div>
+        <img id="mapImg" src="image/map.png">
+      </div>
+
+      <div>  
+        <a href="facebook.com" class=" media-icon"> <i class="fab fa-facebook-f" ></i> </a>
+        <a href="instagram.com" class=" media-icon"> <i class="fab fa-instagram " ></i> </a>
+        <a href="linkedin.com" class=" media-icon"> <i class="fab fa-linkedin-in "></i> </a>
+        <a href="twitter.com" class=" media-icon"> <i class="fab fa-twitter "></i> </a>
+      </div> 
+ 
+    </aside>
+
+</section>
+
+<!-- ============= Section-7  End ============== -->
+
+
+
+<!-- ========= Footer ========= -->
+
+<footer id="footer" class="flex">
+
+  <address>Address: 55 wall street, Washington, USA</address>
+
+  <div>Contact: +888999888999</div>
+
+  <div>Fax: 000-555-555</div>
+
+  <div>Fax: 000-555-555</div>
+
+</footer>
+
+<section id="popUpBox" class="flex">
+<div id="popUp" class="flex">
+	<div><i id="popUp-icon" class="far fa-smile"></i></div>
+	<div id="popUp-msg">Thank you</div>
+	<div id="closePopUp" onclick="openCloseFunc(151)">Close</div>
+</div>
+</section>
+
+
+<script type="text/javascript">
+
+	let anim = document.querySelector("#anim");		
+	let onboard = document.querySelector("#onboard");		
+	let offer = document.querySelector("#offer");		
+	let msg = "elcome on board";
+	let b = msg.length;
+	let n = 0;
+
+	let hideBox = () => {
+		onboard.style.transform = "translateY(-20px)";
+		offer.style.transform = "translateY(30px)";
+	}
+
+	let abc = () => {
+
+		if (n == b) {
+			clearInterval(animInt);
+			hideBox();
+		} else {	
+			anim.innerHTML += msg[n];	
+			console.log(anim.innerHTML[n]);				
+			n = n + 1;
+		}
+	}
+let animInt = setInterval(abc, 200);
+
+
+function openCloseFunc(instr) {
+
+	if (instr === 151) {
+	document.querySelector("#popUpBox").style.display = "none"; 		
+	}
+}
+
+
+
+</script>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

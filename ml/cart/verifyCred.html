@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verify credential</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		#verifyBox{
+			border: 1px solid black;
+			max-width: 500px;
+			padding: 10px;
+		}
+
+		#verifyBox input[type="text"], #verifyBox textarea{
+			border: none;
+			outline: none;
+			border: 1px solid #CCCCCC;
+			padding: 1em;
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		.dis{
+			background: #CCCCCC;
+		}
+
+		#verifyBox input[type="submit"]{
+			border: none;
+			background: orange;
+			padding: 10px;
+			border-radius: 4px;
+			color: #FFF;
+			box-shadow: 3px 3px 5px #000;
+		}
+
+	</style>
+</head>
+<body>
+
+<section id="verifyBox">
+<form method="POST">
+
+	<p>Name:</p>
+	<input type="hidden" name="prsName" value="<?php echo $name; ?>">
+	<p><input type="text" class="dis" name="nm" value="ghjghj" disabled="disabled"></p>
+	
+	<p>Address:</p>
+	<p>
+		<textarea name="addr" cols="10" rows="5">ghjghjghjghjghj</textarea>
+	</p>
+	<p>Mobile no. :</p>
+	<p><input type="text" name="mbl" value="878787878"></p>
+
+	<p>Amount Payable :</p>
+	<p><input type="text" class="dis" name="amt" value="545" disabled="disabled"></p>
+
+	<input type="submit" name="sbm" value="Proceed with payment">
+
+</form>
+</section>
+
+</body>
+</html>

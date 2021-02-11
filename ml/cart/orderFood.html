@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Online</title>
+	<link rel="stylesheet" type="text/css" href="orderFood.css">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster+Two:wght@700&family=Open+Sans:ital,wght@1,600&family=PT+Sans&family=Pacifico&family=Roboto:wght@500&family=Rubik:ital@1&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+	<a href="../index.php">Back</a> 
+	<a href="cartList.php" id="noi" >cart<sup>0</sup></a>	
+</header>
+
+<section id="menuSection">
+
+<h3 id="dinHead">Dinner</h3>
+
+<form method="POST" >
+	<div class="gridItems">		
+		<input type="hidden" name="hidden_name" />
+		<p>hfghgfh</p>
+
+		<input type="hidden" name="price" value="fgh">
+		<p>gfhdgh</p>
+
+		<p>
+			<input type="submit" name="del" value="&#8722;" class="qtyBtns minBtn">
+			<input type="text" class="qtyInput" name="qty" value="gfh" min="1" max="5">
+			<input type="submit" name="act" value="&#10010;" class="qtyBtns plusBtn">
+		</p>
+		<p class="descr">description, hkshsd, kjsdf,jkdsj jsadasdsd sdfds sdf jds </p>	
+		<p class="descr adBtn">
+			sdfsdf
+		</p>
+	</div>	
+</form>		
+ 
+
+ <!-- lunch -->
+
+<h3 id="lunchHead">Lunch</h3>
+
+<form method="POST">	
+<div class="gridItems">		
+	<input type="hidden" name="hidden_name" value="" />
+	<p>dfgfdg</p>
+
+	<input type="hidden" name="price" value="fdg">
+	<p>fdg</p>
+
+	<p>
+		<input type="submit" name="del" value="&#8722;" class="qtyBtns">
+		<input type="text" class="qtyInput" name="qty" value="fdgfd" min="1" max="5">
+		<input type="submit" name="act" value="&#10010;" class="qtyBtns">
+	</p>
+
+	<p class="descr">description, hkshsd, kjsdf,jkdsj jsadasdsd sdfds sdf jds </p>
+	<p class="descr adBtn">
+		dsfdsff
+	</p>	
+</div>
+</form>			
+
+<!-- Starter -->
+<h3 id="starHead">Starter</h3>
+
+
+<form method="POST">	
+	<div class="gridItems">		
+		<input type="hidden" name="hidden_name" value="<?php echo $rowST["i_name"]; ?>" />
+		<p>dfgdfg</p>
+		<input type="hidden" name="price" value="54">
+		<p>4</p>
+
+		<p>
+		<input type="submit" name="del" value="&#8722;" class="qtyBtns">
+		<input type="text" class="qtyInput" name="qty" value="5" min="1" max="5">
+		<input type="submit" name="act" value="&#10010;" class="qtyBtns">
+		</p>
+
+		<p class="descr">description, hkshsd, kjsdf,jkdsj jsadasdsd sdfds sdf jds </p>
+		<p class="descr adBtn">
+			dfgdfg dfg dfg fg fdg
+		</p>	
+	</div>		
+</form>			
+
+
+<!-- Sweets -->
+
+<h3 id="swHead">Sweets</h3>
+<form method="POST">	
+	<div class="gridItems">		
+		<input type="hidden" name="hidden_name" value="<?php echo $rowST["i_name"]; ?>" />
+		<p>dfgdfg</p>
+		<input type="hidden" name="price" value="54">
+		<p>4</p>
+
+		<p>
+		<input type="submit" name="del" value="&#8722;" class="qtyBtns">
+		<input type="text" class="qtyInput" name="qty" value="5" min="1" max="5">
+		<input type="submit" name="act" value="&#10010;" class="qtyBtns">
+		</p>
+
+		<p class="descr">description, hkshsd, kjsdf,jkdsj jsadasdsd sdfds sdf jds </p>
+		<p class="descr adBtn">
+			dfgdfg dfg dfg fg fdg
+		</p>	
+	</div>		
+</form>	
+
+
+
+<!-- Specials -->
+
+<h3 id="specHead"> Specials </h3>
+<form method="POST">	
+	<div class="gridItems">		
+		<input type="hidden" name="hidden_name" value="<?php echo $rowST["i_name"]; ?>" />
+		<p>dfgdfg</p>
+		<input type="hidden" name="price" value="54">
+		<p>4</p>
+
+		<p>
+		<input type="submit" name="del" value="&#8722;" class="qtyBtns">
+		<input type="text" class="qtyInput" name="qty" value="5" min="1" max="5">
+		<input type="submit" name="act" value="&#10010;" class="qtyBtns">
+		</p>
+
+		<p class="descr">description, hkshsd, kjsdf,jkdsj jsadasdsd sdfds sdf jds </p>
+		<p class="descr adBtn">
+			dfgdfg dfg dfg fg fdg
+		</p>	
+	</div>		
+</form>	
+
+</section>
+</body>
+</html>

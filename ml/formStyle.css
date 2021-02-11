@@ -1,0 +1,171 @@
+body{
+margin: 0;
+padding: 0;
+background: rgba(200, 200, 210, 0.6);
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #888;
+}
+
+*{
+box-sizing: border-box;
+line-height: 1.5;
+font-family: arial;
+letter-spacing: 2px;
+color: rgba(0, 0, 0, 0.5);
+}
+
+a{
+	text-decoration: none;
+}
+
+.margin{
+margin: 0 auto;
+}
+
+.flex{
+display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+}
+
+#backBtn{
+	padding: 5px;
+	background: #FFF;
+	margin: 2px;
+}
+
+
+/*==== Form ====*/
+#formBox{
+	margin-top: 20px;
+}
+
+#forms{
+	width: 100%;
+	justify-content: space-evenly;
+}
+
+#forms .log-sign-fbox{
+	flex-basis: 40%;
+	padding: 1em;
+	border-radius: 10px;
+	background: #ecf0f3;
+	margin-top: 10px;
+	box-shadow: 13px 13px 20px #cbced1,
+				-13px -13px 20px #ffffff;
+}
+
+#forms div h2{ 
+	padding: 1em 0em 0.4em 0em;
+	border-bottom: 4px solid #DE3163;
+	width: 120px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+[type="text"], [type="password"], [type="email"], [type="submit"]{
+	width: 100%;
+	padding: 1em;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+[type="text"], [type="password"], [type="email"]{
+	background: none;	
+	color: #555;
+	padding: 20px 10px 20px 5px;
+	margin-bottom: 30px;
+	border-radius: 25px;
+	box-shadow: inset 8px 8px 8px #cbced1,
+				inset -8px -8px 8px #ffffff;
+}
+
+#messageBox{
+	font-size: 15px;
+	font-weight: bold;
+	color: #d90429;
+	border-radius: 2px;
+}
+
+#forms [type="submit"]{
+	padding: 1em;
+	outline: none;
+	border: none;
+	background: #DE3163;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.orBox{
+	text-align: center;
+	padding: 5px;
+}
+
+.or{
+	background: #F9F9F9;
+	padding: 14px 10px 14px 10px;
+	border-radius: 50px;
+}
+
+.formBtns{
+	padding: 1em;
+	text-align: center;
+	color: #FFF;	
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+}
+
+#login-form{
+	align-self: flex-start;
+}
+
+#frgt-pswd{
+	background: green;	
+}
+
+/*==== Form End ====*/
+
+@media(max-width: 1200px){
+	#formBox{
+	margin-top: 0px;
+	padding: 10px;
+	}
+
+	#forms{
+		width: 100%;
+	}
+}
+
+@media(max-width: 800px){
+	#forms{
+		flex-direction: column;
+	}
+	.log-sign-fbox{
+		width: 70%;
+		margin: 10px auto;
+	}
+}
+
+@media(max-width: 600px){
+
+	.log-sign-fbox{
+		width: 100%;
+		margin: 40px auto;
+	}
+}

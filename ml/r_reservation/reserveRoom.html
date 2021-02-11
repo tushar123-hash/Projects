@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reserve Room</title>
+	<link rel="stylesheet" type="text/css" href="reserveRoom.css">
+
+</head>
+
+<body>
+
+<div id="btnBox">
+	<a href="#" onclick="displayPopUp('hint')"><p>?</p></a>
+	<a href="#" onclick="displayPopUp('cart')"><p>dfgdfg</p></a>
+</div>
+
+<h1>Room Reservation</h1>
+
+<section id="section-1">
+
+<form method="POST" action="reserveRoom.php?act=add&id=1">
+
+<div class="box">
+
+	<p>Single Bed Room</p>
+	
+	<input type="hidden" name="r_type" value="Single Bedroom">
+	
+	<p> max. person - 
+		<span>4</span>
+	</p>
+	
+	<div class="flex dateFlex">
+	
+	<span>
+	<p>No. of Room</p>
+	<p>
+		<input type="number" name="qty" min="1" max="5" placeholder="Number of room" required="required">
+	</p>
+	</span>
+	
+	<span>
+	<p>No. of Person</p>
+	<p>
+		<input type="number" name="nop" min="1" max="5" placeholder="Number of person" required="required">
+	</p>
+	</span>
+
+	</div>
+	
+	<input type="hidden" name="r_price" value="<?php echo htmlspecialchars($row["single_price"], ENT_QUOTES) ?>">
+
+	<p>price - 
+		<span>45</span>/day
+	</p>
+
+	<div class="flex dateFlex">
+	<span>
+	<p>check in</p>
+	<p><input type="date" name="ci" min="<?php echo htmlspecialchars($row["min_date"], ENT_QUOTES); ?>" max="<?php echo htmlspecialchars($row["max_date"], ENT_QUOTES); ?>"  required="required">
+	</p>
+	</span>
+	<sapn>
+	<p>check out</p>
+	<p><input type="date" name="co" min="<?php echo $row["min_date"]; ?>" max="<?php echo $row["max_date"]; ?>"  required="required">
+	</p>
+	</sapn>
+	</div>
+
+	<p>
+		<label>
+			<input type="checkbox" name="chd" value="yes"> with children
+		</label>
+	</p>
+	
+	<p>
+		<label>
+			<input type="checkbox" name="meal" value="yes"> Dinner + Lunch + Breakfast
+		</label>
+	</p>
+	
+	<p>
+		<input type="submit" name="add" value="Book">
+	</p>
+
+</div>		
+
+</form>
+
+
+
+<form method="POST" action="reserveRoom.php?act=add&id=2">
+
+<div class="box">
+
+	<p>Double Bed Room</p>
+
+	<input type="hidden" name="r_type" value="Double Bedroom">
+
+	<p>max. person - 
+		<span>4</span>
+	</p>
+
+	<div class="flex dateFlex">
+	
+	<span>
+	<p>No. of Room</p>
+	<p>
+		<input type="number" name="qty" min="1" max="<?php echo $row["doubleqty"]; ?>" placeholder="Number of room" required="required">
+	</p>
+	</span>
+	
+	<span>
+	<p>No. of Person</p>
+	<p>
+		<input type="number" name="nop" min="1" max="<?php echo $row["doublecapacity"]; ?>" placeholder="Number of person" required="required">
+	</p>
+	</span>
+
+	</div>
+	
+	<input type="hidden" name="r_price" value="<?php echo htmlspecialchars($row["double_price"], ENT_QUOTES) ?>">
+
+	<p>price - 
+		<span>445</span>/day
+	</p>
+	
+	<div class="flex dateFlex">
+	<span>
+	<p>check in </p>
+	<p><input type="date" name="ci" min="<?php echo htmlspecialchars($row["min_date"], ENT_QUOTES); ?>" max="<?php echo htmlspecialchars($row["max_date"], ENT_QUOTES); ?>" required="required">
+	</p>
+	</span>
+	<span>
+	<p>check out</p>
+	<p><input type="date" name="co" min="<?php echo htmlspecialchars($row["min_date"], ENT_QUOTES); ?>" max="<?php echo htmlspecialchars($row["max_date"], ENT_QUOTES); ?>" required="required">
+	</p>
+	</span>
+	</div>
+	<p>
+		<label>
+			<input type="checkbox" name="chd" value="yes"> with children
+		</label>
+	</p>
+
+	<p>
+		<label>
+			<input type="checkbox" name="meal" value="yes"> Dinner + Lunch + Breakfast
+		</label>
+	</p>
+	
+	<p>
+		<input type="submit" name="add" value="Book">
+	</p>
+
+</div>		
+
+</form>
+
+
+
+
+
+
+<form method="POST" action="reserveRoom.php?act=add&id=3">
+
+<div class="box">
+	<p>Triple Bed Room</p>
+
+	<input type="hidden" name="r_type" value="Triple Bedroom">
+
+	<p>max. person - 
+		<span>
+			45
+		</span>
+	</p>
+
+	<div class="flex dateFlex">
+	<span>
+	<p>No. of Rooms</p>
+	<p>
+		<input type="number" name="qty" min="1" max="<?php echo $row["tripleqty"]; ?>" placeholder="Number of rooms" required="required">
+	</p>
+	</span>
+	<span>
+	<p>No. of Person</p>
+	<p>
+		<input type="number" name="nop" min="1" max="<?php echo $row["triplecapacity"]; ?>" placeholder="Number of person" required="required">
+	</p>
+	</span>
+	</div>
+	<input type="hidden" name="r_price" value="<?php echo htmlspecialchars($row["triple_price"], ENT_QUOTES) ?>">
+
+	<p>price - 
+		<span>545</span>/day
+	</p>
+	
+	<div class="flex dateFlex">
+	<span>
+	<p>check in</p> 
+	<p>	<input type="date" name="ci" min="<?php echo htmlspecialchars($row["min_date"], ENT_QUOTES); ?>" max="<?php echo htmlspecialchars($row["max_date"], ENT_QUOTES); ?>"  required="required">
+	</p>
+	</span>
+	<span>
+	<p>check out</p> 
+	<p>	<input type="date" name="co" min="<?php echo htmlspecialchars($row["min_date"], ENT_QUOTES); ?>" max="<?php echo htmlspecialchars($row["max_date"], ENT_QUOTES); ?>"  required="required">
+	</p>
+	</span>
+	</div>
+	<p>
+		<label>
+			<input type="checkbox" name="chd" value="yes"> with children
+		</label>
+	</p>
+
+	<p>
+		<label>
+			<input type="checkbox" name="meal" value="yes"> Dinner + Lunch + Breakfast
+		</label>
+	</p>
+
+	<p>
+		<input type="submit" name="add" value="Book">
+	</p>
+
+</div>		
+
+</form>
+
+
+
+</section>
+
+
+<section id="section-2">
+	<h4>Note:</h4>
+	<ul type="circle">
+		<li>Accepting Bookings only between gfhg gg - hgf gh</li>
+		<li>For any query check <a href="#">FAQ</a> section.</li>
+	</ul>
+	<button id="closeNotice" onclick="closeBtnFunc('hint')">close</button>
+
+</section>
+
+<section id="section-3">
+
+<h3>Your booking</h3>	
+
+<div id="cart-container" class="flex">
+
+
+<form method="POST" action="reserveRoom.php?act=del&id=<?php echo $values['room_id']; ?>">
+
+<div class="cart-box">
+
+	<h4 class="fullCol">fdgfdg</h4>
+	<p class="cartCol"> <b>Room :</b>4 </p>
+	<p class="cartCol"> <b>Person :</b> 4 </p>
+	<p class="cartCol"> <b>From :</b>ghgfh</p>
+	<p class="cartCol"> <b>To :</b>gfh</p>
+	<p class="cartCol"> <b>Children :</b>gfh</p>
+	<p class="cartCol"> <b>Meal :</b>gfh </p>
+	<p class="cartCol"> <b>Price :</b> gfh</p>
+	<p class="cartCol"> <b>Total :</b>gfhgfh</p>
+	<p class="fullCol delbtn"><input type="submit" name="del" value="delete"></p>
+
+</div>
+</form>
+
+</div>
+
+<!-- If empty cart, show no booking -->	
+<p>ghgfh </p>
+
+
+<div id="btngrp" class="flex">
+	<p><b>Grand Total :</b> <span id="orderTotal">fgfdg</span></p>
+	<p>Apply Code: <input type="text" class="codeTxt" name="aply" placeholder="enter code"></p>
+
+<form method="POST" action="reserveRoom.php?act=proceed">
+
+	<p>
+		<input type="submit" name="proceed" value="Proceed with payment">
+	</p>
+
+</form>
+</div>	
+
+<!-- close cart button -->
+<button id="closeNotice" onclick="closeBtnFunc('cart')">close</button>
+
+</section>
+
+
+<script type="text/javascript">
+	let section2 = document.querySelector("#section-2");
+	let section3 = document.querySelector("#section-3");
+	let orderTotal = document.querySelector("#orderTotal");
+
+	function displayPopUp(tran) {
+		if (tran == "hint") {
+		section2.style.height = "200px";
+		section2.style.padding = "1em";			
+		}
+
+		if (tran == "cart") {
+			section3.style.right = "0";
+			section3.style.left = "0";
+		}
+
+	}
+
+	function closeBtnFunc(tran) {
+		if (tran == "hint") {
+		section2.style.height = "0px";
+		section2.style.padding = "0em";			
+		}
+		if (tran == "cart") {
+			section3.style.right = "-1400px";
+			section3.style.left = "1400px";
+		}
+
+	}
+
+
+</script>
+
+</body>
+</html>

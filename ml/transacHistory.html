@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transaction History</title>
+
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+		}
+
+		*{
+			line-height: 1.5;
+			color: #4C4C4C;
+			font-family: arial;
+		}
+
+		a{
+			text-decoration: none;
+		}
+
+		h3{
+			padding: 10px;
+			margin: 30px auto;
+			box-shadow: 0px 4px 15px #4C4C4C;
+		}
+
+		input[type="password"]{
+			padding: 10px;
+			border: none;
+			outline: none;
+			border: 1px solid #CCCCCC;
+			border-radius: 5px;
+		}
+
+		.drpDw{
+			padding: 10px;
+			display: none;
+		}
+		.displayDrpDw{
+			display: block;
+		}
+
+		h4{
+			color: orange;
+		}
+
+		table, tr, th, td{
+			border-collapse: collapse;
+			padding: 5px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body>
+
+<!-- ---------- Change password block ----------- -->
+<a href="#" onclick="dropDownFunc(223)"><h3>Change Password</h3></a>
+<section id="pswdBox" class="drpDw">
+	<form method="Post" action="transacHistory.php?ijkasd23asdh5">
+		<p><input type="password" name="currPswd" placeholder="Current Password"></p>
+		<p><input type="password" name="currPswd" placeholder="New Password"></p>
+		<p><input type="password" name="currPswd" placeholder="Confirm New Password"></p>
+	</form>
+</section>
+
+
+<!-- ---------- Transaction History block ----------- -->
+<a href="#"> <h3 onclick="dropDownFunc(323);">My Transactions</h3></a>
+<section id="transactionBox" class="drpDw">
+
+	<div>	
+	<h4>Online Food Ordered</h4>
+	
+		<table>
+			<tr>
+				<th>Item</th>
+				<th>Total</th>
+				<th>Date/Time</th>
+			</tr>
+
+			<?php
+				$selectFromFoodOrdered = "SELECT * FROM foodordered WHERE customer_userID = '".htmlspecialchars($_SESSION["id"], ENT_QUOTES)."'";
+				$result = mysqli_query($dbcon, $selectFromFoodOrdered);
+				if (mysqli_num_rows($result) > 0) {
+					while ($row = mysqli_fetch_array($result)) {
+			?>
+			<tr>
+				<td><?php echo htmlspecialchars($row['Items'], ENT_QUOTES); ?></td>
+				<td><?php echo htmlspecialchars($row['Total'], ENT_QUOTES); ?></td>
+				<td><?php echo htmlspecialchars($row['datetime'], ENT_QUOTES); ?></td>
+			</tr>
+
+			<?php
+						
+					}
+				}
+			?>
+
+		</table>
+	</div>
+
+	<div>	
+	<h4>Room Booked</h4>
+	
+		<table>
+			<tr>
+				<th>Check In - Check Out</th>
+				<th>Total</th>
+				<th>Date/Time</th>
+			</tr>
+
+			<?php
+				$selectFromFoodOrdered = "SELECT * FROM roombooked WHERE customer_userID = '".htmlspecialchars($_SESSION["id"], ENT_QUOTES)."'";
+				$result = mysqli_query($dbcon, $selectFromFoodOrdered);
+				if (mysqli_num_rows($result) > 0) {
+					while ($row = mysqli_fetch_array($result)) {
+			?>
+			<tr>
+				<td><?php echo htmlspecialchars($row['check_in'], ENT_QUOTES)." - ".htmlspecialchars($row['check_in'], ENT_QUOTES); ?></td>
+				<td><?php echo htmlspecialchars($row['Total'], ENT_QUOTES); ?></td>
+				<td><?php echo htmlspecialchars($row['datetime'], ENT_QUOTES); ?></td>
+			</tr>
+
+			<?php
+						
+					}
+				}
+			?>
+
+		</table>
+	</div>
+
+
+	<div>	
+	<h4>Table Booked</h4>
+	
+		<table>
+			<tr>
+				<th>Booking For</th>
+				<th>Total</th>
+				<th>Date/Time</th>
+			</tr>
+
+			<?php
+				$selectFromFoodOrdered = "SELECT * FROM bookedtable WHERE customer_userID = '".htmlspecialchars($_SESSION["id"], ENT_QUOTES)."'";
+				$result = mysqli_query($dbcon, $selectFromFoodOrdered);
+				if (mysqli_num_rows($result) > 0) {
+					while ($row = mysqli_fetch_array($result)) {
+			?>
+			<tr>
+				<td><?php echo htmlspecialchars($row['book_date_time'], ENT_QUOTES); ?></td>
+				<td><?php echo htmlspecialchars($row['Total'], ENT_QUOTES); ?></td>
+				<td><?php echo htmlspecialchars($row['regis_date'], ENT_QUOTES); ?></td>
+			</tr>
+
+			<?php
+						
+					}
+				}
+			?>
+
+		</table>
+		<p>No booking</p>
+	</div>
+
+</section>
+
+
+<!-- ---------- Delete Account block ----------- -->
+<a href="#" onclick="dropDownFunc(333)"><h3>Delete Account</h3></a>
+<section id="delAcc" class="drpDw">
+	<form method="POST" action="transacHistory.php?454dsfsd5456dsf88">
+		<p>Once Your Account is deleted it can not be undone</p>
+		<p>Are you sure you want to delete account?<input type="submit" name="yy" value="Yes"></p>
+	</form>
+</section>
+
+<script type="text/javascript">
+
+	function dropDownFunc(vv) {
+		if (vv == 223) {
+			document.querySelector("#pswdBox").classList.toggle("displayDrpDw");
+		}
+		if (vv == 323) {
+			document.querySelector("#transactionBox").classList.toggle("displayDrpDw");
+		}
+		if (vv == 333) {
+			document.querySelector("#delAcc").classList.toggle("displayDrpDw");
+		}
+	}
+
+
+</script>
+
+</body>
+</html>

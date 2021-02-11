@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Now</title>
+
+	<link rel="stylesheet" type="text/css" href="formStyle.css">
+</head>
+<body>
+
+<a href="index.php"><div id="backBtn">Back</div></a>	
+	
+<!-- ========= Form ========= -->
+<section id="formBox" class="flex">
+
+<div id="forms" class="flex margin">
+
+	<!-- Registration Form -->
+	<div id="register-form" class="log-sign-fbox">
+		
+	<h2>Sign Up</h2>
+	
+	<form method="post">	
+
+		<p>First Name</p>
+		<p><input type="text" name="fnm1" placeholder="First Name"></p>
+
+		<p>Last Name</p>
+		<p><input type="text" name="lnm1" placeholder="Last Name"></p>
+		
+		<p>Email</p>
+		<p><input type="email" name="eml1" placeholder="Enter Email"></p>
+
+		<p>Please enter a word(can be a name of person, place, animal etc) as security key?</p>
+		<p><input type="text" name="s_check" placeholder="security key"></p>
+		
+		<p>Password</p>
+		<p><input type="password" name="pswd1" placeholder="Password"></p>
+		<span id="messageBox"><?php  echo $message; ?></span>
+
+		<input type="hidden" name="signUp" value="0">
+
+		<p><input type="submit" id="singUpBtn" name="signUpSubmit" value="Sign In"></p>
+
+		<p class="orBox"><span class="or">OR</span></p>
+		
+		<p><a href="#" ><div class="formBtns">Sign Up with Google</div></a></p>
+
+	</form>
+	</div>
+
+	<!-- Log In form -->
+	<div id="login-form" class="log-sign-fbox">
+
+	<h2 id="loginh2" style="border-bottom: 4px solid #DC8753;">Log In</h2>
+	
+	<form method="post">
+
+		<p>Email</p>
+		<p><input type="email" name="eml2" placeholder="Enter Email"></p>
+	
+		<p>Password</p>
+		<p><input type="password" name="pswd2" placeholder="Password"></p>
+
+		<p><a href="resetpswd.php">Forgot Password ?</a></p>
+
+		<span id="messageBox"><?php  echo $messageLogIn; ?></span>
+		<input type="hidden" name="logIn" value="1">
+		
+		<p><input type="submit" name="logInSubmit" value="Log In" style="background: #DC8753;"></p>	
+
+	</form>
+
+	<p class="orBox"><span class="or">OR</span></p>
+
+	<p><a href="#" ><div class="formBtns">Facebook</div></a></p>
+
+	</div>
+</div>
+</section>
+
+</body>
+</html>
