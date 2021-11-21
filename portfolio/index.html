@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+<meta name="keywords" content="HTML, CSS, JavaScript">
+
+<meta name="Tushar Mathur Portfolio" content="Free Web tutorials for HTML and CSS">
+
+<meta name="Tushar" content="tushar">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar Mathur - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========NAVIGATION BAR========= -->
+    <nav id="navbar">
+        <!-- NAV LINKS -->
+        <a href="#"><h1>My Profile</h1></a>
+        <div id="navLink">    
+            <a href="#section-2"><h4>Projects</h4></a>
+            <a href="#section-3"><h4>Certifications</h4></a>
+        </div>
+
+        <!-- ==========DATE========== -->
+        <div id="date"> </div>
+    </nav>
+    <!-- ===============NAVIGATOION BAR END============== -->
+
+
+
+
+    <!-- ========== INTRODUCTION SECTION ============== -->
+    <section id="section-1">
+
+        <!-- TEXT ANIMATION BOX -->
+        <div id="txtslide">
+            <div class="txtbox">Hello World! I'am Tushar Mathur</div>
+            <div class="txtbox">I am a web developer who possess a good knowledge of technologies like HTML, CSS, JavaScript and PHP.</div>
+            <div class="txtbox">
+                <h3>My Skills</h3>
+                <ul>
+                    <li>Technologies: HTML, CSS, MySql</li>
+                    <li>Languages: JavaScript, Php</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- PROFILE IMAGE -->
+        <div id="imgBox">
+            <img id="profileImg" src="image/prf1.png" alt="">
+        </div>
+
+    </section>
+    <!-- =================INTRODUCTION SECTION END==============-->
+
+
+
+    <!-- =================RESUME AND PROJECT SECTION================= -->
+    <section id="section-2">
+
+        <!-- RESUME BOX -->
+        <div id="resume">
+            <table>
+                <tr>
+                    <th>Tushar Mathur</th>
+                    <td>
+                        <p>+91 8949148820</p>
+                        <p>tusharmathur774@gmail.com</p>
+                        <a href="#"><p>tushar(LinkedIn)</p></a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Experience</th>
+                    <td>                        
+                        <p>Web Development Intern | The Spark Foundation <span>( January, 2021 - February, 2021 ) </span></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Skills</th>
+                    <td>                        
+                        <p>Languages: PHP, JavaScript</p>
+                        <p>Technologies: MySql</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Projects</th>
+                    <td>                        
+                        <p>Restaurant Website</p>
+                        <p>Porfolio Website</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th> Education </th>
+                    <td>Bachelor of Computer Application | SS JAIN SUBODH PG (AUTONOMOUS) COLLEGE JAIPUR, RAJASTHAN (2017 - 2020)</td>
+                </tr>
+
+                <tr>
+                    <th>Achievements</th>
+                    <td>Most Responsible student of the Year 2017 award.</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- PROJECT BOX -->
+        <div id="projects">
+
+        <a  href="#">
+            <div class="projectbox">
+                <img src="image/portfolio_project.png" alt="">
+                <hr>
+                <h4>My Portfolio</h4>
+                <p>It is an website template, designed using HTML, CSS and JavaScript.</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="projectbox tranpro1">
+                <img src="image/blog_project.png" alt="">
+                <hr>
+                <h4>Blog</h4>
+                <p>This blog website is a dynamic website, it is coded in PHP and stores blogs in sql.</p>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="projectbox" >
+                <img src="image/restro_project.png" alt="">
+                <hr>
+                <h4>Restaurant</h4>
+                <p>It is a restaurnat website that fascilitates cart, coupons and discount feature.</p>
+            </div>
+        </a>
+
+        
+        <a href="#">
+            <div class="projectbox tranpro2">
+                More...
+            </div>
+        </a>
+        </div>
+        
+    </section>
+    <!-- =================RESUME AND PROJECT SECTION END================= -->
+
+
+    <!-- ================CERTIFICATION SECTION ================== -->
+    <section id="section-3">
+        <h1>My Certification's</h1>
+        <div id="certiBox">
+            <div class="certimg">
+                <img src="image/mta.png" alt="">
+                <p>Microsoft Technoloy Associate certificate</p>
+            </div>
+            <div class="certimg">
+                <img src="image/php.png" alt="">
+                <p>PHP Development Certificate</p>
+            </div>
+            <div class="certimg">
+                <img src="image/gdg.png" alt="">
+                <p>Digital Marketinf Certification</p>
+            </div>
+        </div>
+    </section>
+    <!-- ================CERTIFICATION SECTION END================== -->
+
+
+
+    <script>
+// TEXT ANIMATION(SLIDE)
+        var txtslide = document.querySelectorAll(".txtbox");
+        var x = 0;
+
+        function slide() {  
+
+            for (var i = 0; i < txtslide.length; i++) {
+                txtslide[i].style.display = "none";
+            } 
+
+            if(x<txtslide.length && x>-1){
+            txtslide[x].style.display = "block"; 
+            console.log(x++);
+            } else {
+                txtslide[0].style.display = "block";
+                x=0;
+            }
+        }
+
+        setInterval(slide, 2000);
+
+
+        // DISPLAY DATE
+        const d = new Date();
+        document.querySelector("#date").innerHTML = d.toDateString().toUpperCase();
+    </script>
+
+
+</body>
+</html>
