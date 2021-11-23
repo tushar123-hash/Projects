@@ -326,7 +326,7 @@ hr{
     }
 
     #imgBox{
-        width: 100%;
+        background: orange;
     }
 
     #profileImg{
