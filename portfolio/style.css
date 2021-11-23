@@ -93,6 +93,7 @@ margin-top: 20px;
 #txtslide{
     padding: 10px;
     width: 50%;
+    font-size: 1.5vw;
 }
 
 #txtslide ul{
@@ -264,6 +265,7 @@ hr{
 
     #txtslide{
         height: 150px;
+        width: 100%;
     }
 
     #resumeBox{
@@ -325,6 +327,12 @@ hr{
 
     #imgBox{
         width: 100%;
+    }
+
+    #profileImg{
+        height: 200px;
+        width: 200px;
+        box-shadow: 10px 10px 30px rgba(204, 204, 204, 0.7);
     }
 
     #resumeBox{
