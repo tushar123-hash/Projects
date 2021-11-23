@@ -18,7 +18,6 @@
     scrollbar-width: thin;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    line-height: 1.5rem;
     letter-spacing: 0.2em;
     word-spacing: 0.2em;            
 }
@@ -26,7 +25,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: Harrington;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #navbar{
@@ -36,7 +35,6 @@ body{
     justify-content: space-between;
     align-items: center;
     background: #fff;
-    width: 100%;
     box-shadow: 0px 10px 10px rgba(204, 204, 204, 0.8);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -66,8 +64,8 @@ a{
 }
 
 .padding{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /* section 1 (Introduction) */
@@ -75,7 +73,7 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: auto;
+    height: 100vh;
     text-align: center;
     margin: 0 auto;
 }
@@ -87,8 +85,8 @@ margin-top: 20px;
 }
 
 #profileImg{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     box-shadow: 30px 40px 30px rgba(204, 204, 204, 0.7);
 }
 
@@ -97,6 +95,9 @@ margin-top: 20px;
     width: 50%;
 }
 
+#txtslide ul{
+list-style-type: none;
+}
 .txtbox {
     display: none;
     width: 100%;
@@ -104,73 +105,96 @@ margin-top: 20px;
 /* section 1 (Introduction) END*/
 
 
-/* Section 2 (Resume and Project)  */
+/* Section 2 (Resume and Project)*/
 #section-2{
-    display: flex;
-    justify-content: space-around;
+    display: flex;    
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    line-height: 2em;
 }
 
-#section-2 #resume, #section-2 #projects{
+#section-2 h1{
+    width: 150px;
+    text-align: center;
+    border-bottom: 2px dotted black;
+    padding-bottom: 1vw;
+}
+
+#resumeBox{
+    text-align: justify-All;
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 20px solid rgba(204, 204, 204, 0.7);
+    padding: 2vw;
+}
+
+#resumeBox li{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#resumeBox h5{
+    padding-right: 2vw;
+    margin: 0;
+}
+
+#resumeBox div,#resumeBox p{
+margin: 0;
+padding-bottom: 1vw;
+}
+/* Section 2 (Resume and Project) END */
+
+
+/* Section 3 (Resume and Project)  */
+#section-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(image/books.png) no-repeat;
+    background-position: right;
+    background-size: 40% 60%;
+    background-attachment: fixed;
+}
+
+#section-3 #resume, #section-2 #projects{
     width: 50%;
     margin: 0 auto;
-}
-
-
-table{
-    border: 5px solid rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    width: 80%;
-    margin: 0 auto;
-    border-spacing: 0;
-}
-
-table, tr, th, td{
-    padding: 5px;
-    text-align: left;
-    vertical-align: top;
-    border-collapse: collapse;
-}
-
-th{
-    background: rgba(23, 21, 233, 0.8);
-    color: #fff;
-    padding-left: 0.5em;
-}
-
-td{
-    padding-left: 1em;
 }
 
 #projects{
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 20px;
+    grid-gap: 5vw;
     text-align: justify-All;
+    margin-left: 4vw;
 }
 
 .projectbox{
+    box-shadow: 30px 30px 10px rgba(204, 204, 204, 0.7);
     width: 250px;
-    border: 1px solid rgba(204, 204, 204, 0.8);
     padding: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    align-self: stretch;
+    align-self: center;
     height: 100%;
     background: #fff;
     text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgba(204, 204, 204, 0.7);
 }
 
 .projectbox:hover{
-    box-shadow: 2px 2px 10px rgba(204, 204, 204, 0.8);
+    box-shadow: 10px 10px 10px rgba(204, 204, 204, 0.8);
     border: none;
     transition: 1s;
 }
 
 .projectbox h4, .projectbox p{
-    align-self: flex-start;
     margin: 0px;
     padding: 5px;
 }
@@ -185,8 +209,6 @@ td{
 }
 
 .tranpro2{
-    background: #000; 
-    color: #fff;
     transform: translateY(-70px);
 }
 
@@ -196,11 +218,11 @@ hr{
     background: rgb(83, 83, 83);
     border: none;
 }
-/* Section 2 (Resume and Project) END */
+/* Section 3 (Resume and Project) END */
 
 
-/* section 3 (Certifications) */
-#section-3{
+/* section 4 (Certifications) */
+#section-4{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,7 +249,7 @@ hr{
     width: 100%;
     height: 200px;
 }
-/* section 3 (Certifications) END*/
+/* section 4 (Certifications) END*/
 
 
 @media screen and (max-width: 1100px){
@@ -244,13 +266,22 @@ hr{
         height: 150px;
     }
 
-    #section-2{
-        flex-direction: column;
-        height: auto;
+    #resumeBox{
+        width: 90%;
     }
 
-    #section-2 #resume, #section-2 #projects{
+    #section-3{
+        flex-direction: column;
+        height: auto;
+        background: none;
+    }
+
+    #section-3 #resume, #section-3 #projects{
         width: 100%;
+        margin: 0 auto;
+    }
+
+    #projects{
         margin: 0 auto;
     }
 
@@ -296,6 +327,15 @@ hr{
         width: 100%;
     }
 
+    #resumeBox{
+        display: block;
+    }
+
+    #resumeBox h5{
+        margin-top: 5px;
+        padding-top: 1vw;
+        border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+    }
     #projects{
         display: block;
     }
