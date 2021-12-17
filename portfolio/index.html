@@ -1,258 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-
-    <meta name="Tushar Mathur Portfolio" content="Free Web tutorials for HTML and CSS">
-
-    <meta name="Tushar" content="tushar">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tushar Mathur - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <title>Tushar Mathur</title>
 </head>
-
 <body>
-    <!-- ========NAVIGATION BAR========= -->
-    <nav id="navbar">
-        <!-- NAV LINKS -->
-        <a href="#">
-            <h1>My Profile</h1>
-        </a>
-        <div id="navLink">
-            <a href="#section-2">
-                <h4>Projects</h4>
-            </a>
-            <a href="#section-3">
-                <h4>Certifications</h4>
-            </a>
+
+    <section id="sec_1">
+        <button id="tourBtn" onclick="starttour()">Take a tour!</button>
+
+            <div id="profileimg">
+                <div id="profilepic">
+                    <img src="image/image.png" alt="" id="pfimg">
+                </div>
+                <h3>Tushar Mathur</h3>
+                <p>Software Engineer</p>
+            </div>
+
+        <div id="jd">
+            <q> I design affordable websites for all type of business to personal portfolio. I use HTML, CSS JavaScript for designing front end and PHP programming
+                language for backend. I have created ecommerce restaurant website with cart. Web development has always forced to think something creative and that's 
+                that's what keeps me motivated to do my job with utmost responsibility.  
+            </q>
+         </div>
+        <!-- <div id="introText">
+            <p>Hello</p>
+            <p>I'am Tushar Mathur</p>
         </div>
 
-        <!-- ==========DATE========== -->
-        <div id="date"> </div>
-    </nav>
-    <!-- ===============NAVIGATOION BAR END============== -->
+        <div id="pfimgbox">
+            <div id="profileimg">
+                <div id="profilepic">
+                    <img src="image/image.png" alt="" id="pfimg">
+                </div>
+                <hr style="width: 50px;height:5px;background:orangered;border: none;margin-top: 1.5em;">
+                <h3>Tushar Mathur</h3>
+                <p>Software Engineer</p>
+            </div>
 
+        </div> -->
+    </section>
 
+    <section id="sec_2">
+            <h1>Experience</h1>
+            <div id="expcontainer">
 
+            <div class="expboxbg">
+                <img class="internlogo" src="image/spark.png" alt="">
+                <div class="expbox">
+                    <h3>Author and Content Creator</h3>
+                    <p>Gradili <span>( December, 2021 - Present )</span></p>
+                    <ul>
+                    <li>Dynamic educational website</li>
+                    <li>Create customize Blogs, Self Paced Courses</li>
+                    <li>Key Skills: PHP, HTML, CSS, JavaScript, MySQL</li>
+                    </ul>
+                </div>
+            </div>              
 
-    <!-- ========== INTRODUCTION SECTION ============== -->
-    <section id="section-1" class="padding">
-
-        <!-- TEXT ANIMATION BOX -->
-        <div id="txtslide">
-            <div class="txtbox">Hello World! I'am Tushar Mathur</div>
-            <div class="txtbox">I am a web developer who possess a good knowledge of technologies like HTML, CSS,
-                JavaScript and PHP.</div>
-            <div class="txtbox">
-                <h3>My Skills</h3>
-                <ul>
-                    <li>Technologies: HTML, CSS, MySql</li>
-                    <li>Languages: JavaScript, Php</li>
+            <div class="expboxbg">
+                <img class="internlogo" src="image/weblogo.jpeg" alt="">
+                <div class="expbox">
+                    <h3>Web Development Intern</h3>
+                    <p>The Spark Foundation <span>( January, 2021 - February, 2021 )</span></p>
+                    <ul>
+                    <li>Designed and hosted online banking system dynamic website</li>
+                    <li>Customer data storage and transaction updating</li>
+                    <li>Key Skills: PHP, HTML, CSS, JavaScript, MySQL</li>
                 </ul>
+                </div>
             </div>
-        </div>
-
-
-        <!-- PROFILE IMAGE -->
-        <div id="imgBox">
-            <img id="profileImg" src="image/prf1.png" alt="">
-        </div>
-
+            </div>
     </section>
-    <!-- =================INTRODUCTION SECTION END==============-->
 
-
-    <section id="section-2" class="padding">
-        <h1>Resume</h1>
-        <div id="resumeBox">
-
-            <h5>Tushar Mathur</h5>
-            <div>
-                <li>+91 8949148820</li>
-                <li>tusharmathur774@gmail.com</li>
-                <li><a href="#">tushar(LinkedIn)</a></li>
-            </div>
-
-            <h5>Experience</h5>
-            <div>
-                <p>Web Development Intern | The Spark Foundation</p>
-                <p>( January, 2021 - February, 2021 )</p>
-            </div>
-
-            <h5>Skills</h5>
-            <div>
-                <p>Languages: PHP, JavaScript</p>
-                <p>Technologies: MySql</p>
-            </div>
-
-            <h5>Projects</h5>
-            <div>
-                <a href="#section-3">click here</a>
-            </div>
-
-            <h5>Education</h5>
-            <div>
-                <p>Bachelor of Computer Application | SS JAIN SUBODH PG (AUTONOMOUS) COLLEGE JAIPUR, RAJASTHAN
-                    (2017 - 2020)</p>
-            </div>
-
-            <h5>Achievements</h5>
-            <div>
-                <p>Most Responsible student of the Year 2017 award.</p>
-            </div>
-
+    <section id="sec_3">
+        <h2>My Skills</h2>
+        
+        <div class="skillbox transl1">
+            <div class="skilltitle">HTML</div>
+            <div class="progressBar"><p class="progress2">90%</p></div>
         </div>
+        
+        <div class="skillbox transl2">
+            <div class="skilltitle">CSS</div>
+            <div class="progressBar"><p class="progress2">90%</p></div>
+        </div>
+        
+        <div class="skillbox transl1">
+            <div class="skilltitle">JavaScript</div>
+            <div class="progressBar"><p class="progress1">80%</p></div>
+        </div>
+        
+        <div class="skillbox transl2">
+            <div class="skilltitle">PHP</div>
+            <div class="progressBar"><p class="progress1">80%</p></div>
+        </div>
+        
+        <div class="skillbox transl1">
+            <div class="skilltitle">MySQL</div>
+            <div class="progressBar"><p class="progress2" >90%</p></div>
+        </div>
+
+
     </section>
 
 
-    <!-- =================RESUME AND PROJECT SECTION================= -->
-    <section id="section-3" class="padding">
+    <section id="sec_4">
+        <h2>Education</h2>
+        <div class="edubox">
+            <div class="col_l">
+            <h3>BACHELOR OF COMPUTER APPLICATION (2017 - 2020)</h3>
+            <p>SS JAIN SUBODH PG AUTONOMOUS COLLEGE</p>
+            <p>CGPA 8.1</p>
+            </div>
+            <div class="col_r">
+                <img src="image/subodh.jpg" alt="">
+            </div>
+        </div>
 
-        <!-- RESUME BOX -->
-        <!-- <table>
-                <tr>
-                    <th>Tushar Mathur</th>
-                    <td>
-                        <p>+91 8949148820</p>
-                        <p>tusharmathur774@gmail.com</p>
-                        <a href="#">
-                            <p>tushar(LinkedIn)</p>
-                        </a>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>Experience</th>
-                    <td>
-                        <p>Web Development Intern | The Spark Foundation <span>( January, 2021 - February, 2021 )
-                            </span></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>Skills</th>
-                    <td>
-                        <p>Languages: PHP, JavaScript</p>
-                        <p>Technologies: MySql</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th>Projects</th>
-                    <td>
-                        <p>Restaurant Website</p>
-                        <p>Porfolio Website</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <th> Education </th>
-                    <td>Bachelor of Computer Application | SS JAIN SUBODH PG (AUTONOMOUS) COLLEGE JAIPUR, RAJASTHAN
-                        (2017 - 2020)</td>
-                </tr>
-
-                <tr>
-                    <th>Achievements</th>
-                    <td>Most Responsible student of the Year 2017 award.</td>
-                </tr>
-
-            </table> -->
-
-        <!-- PROJECT BOX -->
-        <div id="projects">
-
-            <a href="#">
-                <div class="projectbox">
-                    <img src="image/portfolio_project.png" alt="">
-                    <hr>
-                    <h4>Portfolio Website</h4>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="projectbox tranpro1">
-                    <img src="image/blog_project.png" alt="">
-                    <hr>
-                    <h4>Blog Website</h4>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="projectbox">
-                    <img src="image/restro_project.png" alt="">
-                    <hr>
-                    <h4>Restaurant Website</h4>
-                </div>
-            </a>
-
-
-            <a href="#">
-                <div class="projectbox tranpro2">
-                    More...
-                </div>
-            </a>
+        <div class="edubox">
+            <div class="col_r" >
+                <img src="image/tis.jpg" alt="">
+            </div>
+            <div class="col_l">
+            <h3>SECONDARY HIGHER EDUCATION (2016 - 2017)</h3>
+            <p>TAGORE INTERNATIONAL SCHOOL</p>
+            <p>CGPA 6.7</p>
+            </div>
         </div>
 
     </section>
-    <!-- =================RESUME AND PROJECT SECTION END================= -->
 
-
-    <!-- ================CERTIFICATION SECTION ================== -->
-    <section id="section-4">
-        <h1>My Certification's</h1>
-        <div id="certiBox">
-            <div class="certimg">
-                <img src="image/mta1.png" alt="">
-                <p>Microsoft Technoloy Associate certificate</p>
+    <section id="sec_5">
+        <div class="projectbox">
+        <div class="projectboxinner">
+        <div class="slider">    
+            <!-- <div class="slimgBox">
+                <img src="image/pf1.PNG" alt="" class="slimg">
+                <img src="image/pf2.PNG" alt="" class="slimg">
+                <img src="image/pf3.PNG" alt="" class="slimg">
+                <img src="image/pf4.PNG" alt="" class="slimg">
             </div>
-            <div class="certimg">
-                <img src="image/php1.png" alt="">
-                <p>PHP Development Certificate</p>
-            </div>
-            <div class="certimg">
-                <img src="image/gdg1.png" alt="">
-                <p>Digital Marketinf Certification</p>
-            </div>
+            <div class="picnums">
+                <button value="0" class="num">1</button>
+                <button value="1" class="num">2</button>
+                <button value="2" class="num">3</button>
+                <button value="3" class="num">4</button>
+            </div> -->
+            <iframe src="index.html" frameborder="0" style="border: none;"></iframe>
         </div>
+        <div class="descBox">
+            <h2>My Portfolio</h2>
+            <dt>Technologies</dt>
+            <dd>HTML, CSS, MySQL</dd>
+            <dt>Languages</dt>
+            <dd>PHP, JavaScript</dd>
+            <span>#Portfolio</span>            
+            <span>#MyWebsite</span>
+            <span>#internet</span>
+            <span>#WebDevelopment</span>
+        </div>
+        </div>
+        <a href="index.html"><div class="vfwBtn">View Full Website</div></a>
+    </div>
     </section>
-    <!-- ================CERTIFICATION SECTION END================== -->
 
 
+    <!-- <svg style="background: green;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="189" viewBox="0 0 1899 179">
+		<defs>
+			<path id="wavy-border-bottom-a"
+			      d="M-1.13686838e-12,0.6484375 L1976,0.6484375 L1976,157.09618 C1720.91675,80.9667147 1524.94269,46.4248276 1388.07782,53.4705194 C979.937949,74.4812263 934.664214,163.906659 575.282726,177.593344 C355.098235,185.978851 163.337326,155.406414 -1.13601142e-12,85.8760353 L-1.13686838e-12,0.6484375 Z" />
+		</defs>
+		<g fill="none" fill-rule="evenodd">
+			<use fill="#FFF" fill-rule="nonzero" transform="rotate(180 988 89.798)" xlink:href="#wavy-border-bottom-a" />
+		</g>
+	</svg> -->
 
     <script>
-        // TEXT ANIMATION(SLIDE)
-        var txtslide = document.querySelectorAll(".txtbox");
-        var x = 0;
+        var val = 0;
+        var myfunc;
+        var bodyheight = document.querySelector("body").scrollHeight;
 
-        function slide() {
+        function scrollme(){
 
-            for (var i = 0; i < txtslide.length; i++) {
-                txtslide[i].style.display = "none";
-            }
-
-            if (x < txtslide.length && x > -1) {
-                txtslide[x].style.display = "block";
-                console.log(x++);
-            } else {
-                txtslide[0].style.display = "block";
-                x = 0;
+            if(val < bodyheight){            
+            scrollTo(0, val);
+            val += 469;
+            console.log(val);
+            console.log("bh = "+bodyheight);
+            } else if(val > bodyheight || bodyheight === 0){
+                clearInterval(myfunc);
+                val = 0;
             }
         }
 
-        setInterval(slide, 2000);
+    function starttour(){
+       myfunc = setInterval(scrollme, 2000);
+    }
 
 
-        // DISPLAY DATE
-        const d = new Date();
-        document.querySelector("#date").innerHTML = d.toDateString().toUpperCase();
+    var slimg = document.querySelectorAll(".slimg");
+    var num = document.querySelectorAll(".num");
+    var z, r;
+
+    for(z=0; z<slimg.length; z++){
+        slimg[z].style.display = "none";
+    }
+
+    for (z = 0; z < slimg.length; z++) {
+        num[z].addEventListener('click', function(){
+            slimg[this.value].style.display = "block";           
+        });
+        slimg[z].style.display = "none";
+    }
+
+    slimg[0].style.display = "block";
+
+
+    // for (var x = 0; x < num.length; x++) {
+    //     document.write(x);
+    //     num[x].addEventListener('click', function(){
+    //         slimg[this.value].style.display = "block";           
+    //     });        
+    // }   
+
     </script>
 
-
 </body>
-
 </html>

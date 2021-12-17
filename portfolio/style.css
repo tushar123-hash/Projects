@@ -1,355 +1,371 @@
-::-webkit-scrollbar{
-    width: 10px;
-}
-
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb{
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover{
-    background: #555;
-}
-
-*{
-    scrollbar-width: thin;
-    box-sizing: border-box;
+html{
     scroll-behavior: smooth;
-    letter-spacing: 0.2em;
-    word-spacing: 0.2em;            
+    box-sizing: border-box;
 }
 
 body{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
+    scroll-behavior: smooth;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.05em;
 }
 
-#navbar{
-    font-family: Brush Script MT;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    box-shadow: 0px 10px 10px rgba(204, 204, 204, 0.8);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    z-index: 10;
-    position: relative;
-}
-
-#navLink{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.padding{
+    padding-top: 10em;
+    padding-bottom: 10em;
 }
 
 a{
     text-decoration: none;
-    color: #000;;
 }
 
-#navbar h1, #navbar h4{
-    padding: 15px 10px 10px 15px;
-    margin: 0px;
+#sec_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
 }
 
-#navbar h4:hover{
+#tourBtn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border: none;
+    color: #fff;
+    background: rgba(12, 110, 120, 0.8);
+    box-shadow: 5px 5px 4px rgba(204, 204, 204, 0.8);
+    padding: 10px;
+}
+
+#jd{
+    font-size: 1.5rem;
+    width: 60%;
+    text-align: justify;
+    margin: 10px;
+    padding-left: 2em;
+font-family: Gabriola;
+}
+
+#introText{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: #000;
+width: 70%;
+}
+
+#introText p{
+    padding: 0;
+    margin: 0;
+}
+
+#profileimg{
+    background: #fff;
+    padding: 0em 4em 0em 0em;
+    text-align: center;
+    margin: 10px;
+    border-right: 4px solid rgba(204, 204, 204, 0.8);
+}
+
+#profilepic{
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+}
+
+#pfimg{
+width: 100%;
+border-radius: 50%;
+height: 100%;
+box-shadow: 2px 2px 10px rgba(204, 204, 204, 1);
+}
+
+#sec_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 100vh;
+    /* background: url('image/bg3.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 5em 0em 5em 0em; */
+}
+
+#expcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding: 2em 1em 2em 1em;
+}
+
+.internlogo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.expboxbg{
+position: relative;
+background: #fff;
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+border-radius: 10px;
+margin: 40px;
+}
+
+.expbox{
+padding: 2em 1em 2em 1em;
+}
+
+.expboxbg:hover .internlogo{
+    width: 54px;
+    height: 54px;
+    transition: 0.3s;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sec_3{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;    
+    background: url('image/bg3.png') no-repeat;
+    background-size: 100% 100%;
+    margin: 5em 0em 5em 0em;
+    color: #fff;
+}
+
+#sec_3 h2{
+border-bottom: 2px solid #fff;
+padding-bottom: 10px;
+}
+
+.skillbox{
+width: 200px;
+text-align: center;
+padding-top: 1em;
+}
+
+.skilltitle{
+    font-size: 2em;
+}
+
+.progressBar{
+border: 2px solid rgba(204, 204, 204, 0.8);
+margin: 2em 1em 1em 1em;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.transl1{
+    transform:translateY(-100px);
+}
+
+.transl2{
+    transform:translateY(100px);
+}
+
+
+.progress1{
+width: 80%;
+}
+
+.progress2{
+    width: 90%;
+}
+
+.progressBar p{
+background: #000;
+padding: 5px;
+margin: 1px;
+border-radius: 20px;
+color: #fff;
+font-size: 10px;
+}
+
+#sec_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+}
+
+.edubox{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.edubox img{
+    width: 100%;
+    height: 100%;
+}
+.col_r, .col_l{
+    margin: 10px;
+}
+.col_r{
+    width: 250px;
+    height: 150px;
+    box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.8);
+}
+
+#sec_5{
+ padding-top: 60px;
+ padding-bottom: 60px;   
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+padding: 10px;
+}
+
+.projectbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 60%;
+}
+
+.projectboxinner{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.slimgBox{
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+
+.slimgBox img{
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+
+.vfwBtn{
+    text-align: center;
+    padding: 10px;
     background: #000;
     color: #fff;
 }
 
-.padding{
-    padding-top: 80px;
-    padding-bottom: 80px;
+iframe{
+    height: 100%;
 }
 
-/* section 1 (Introduction) */
-#section-1{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    margin: 0 auto;
+@media only screen and (max-width: 1000px){
+
+    #sec_1{
+        height: auto;
+    }
+
+    #sec_2{
+        height: auto;
+    }
+
+    .expboxbg{
+        width: 100%;
+    }
+
+    #expcontainer{
+        flex-direction: column;
+    }
+
+    #sec_3{
+        flex-direction: column;
+        background: none;
+        height: auto;
+        border: 1px solid blacK;
+        background: #354F6F;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* color: #000; */
+    }
+.transl1, .transl2{
+transform: translate(0px);
+margin-top: 10px;
 }
 
-
-#imgBox{
-width: 50%;
-margin-top: 20px;
+.edubox{
+width: 100%;
+margin: 10px;
+flex-direction: column;
 }
 
-#profileImg{
-    height: 300px;
-    width: 300px;
-    box-shadow: 30px 40px 30px rgba(204, 204, 204, 0.7);
+.col_r{
+    width: 250px;
+    height: 150px;
+    box-shadow: none;
 }
 
-#txtslide{
-    padding: 10px;
-    width: 50%;
-    font-size: 1.5vw;
-}
-
-#txtslide ul{
-list-style-type: none;
-}
-.txtbox {
-    display: none;
-    width: 100%;
-}
-/* section 1 (Introduction) END*/
-
-
-/* Section 2 (Resume and Project)*/
-#section-2{
-    display: flex;    
-    justify-content: center;
-    align-items: center;
+.projectboxinner{
     flex-direction: column;
-    line-height: 2em;
 }
 
-#section-2 h1{
-    width: 150px;
-    text-align: center;
-    border-bottom: 2px dotted black;
-    padding-bottom: 1vw;
+#sec_4{
+    height: auto;
 }
 
-#resumeBox{
-    text-align: justify-All;
-    width: 60%;
-    display: grid;
-    grid-template-columns: auto auto;
-    border: 20px solid rgba(204, 204, 204, 0.7);
-    padding: 2vw;
+#sec_5{
+    height: auto;
 }
 
-#resumeBox li{
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
-#resumeBox h5{
-    padding-right: 2vw;
-    margin: 0;
-}
-
-#resumeBox div,#resumeBox p{
-margin: 0;
-padding-bottom: 1vw;
-}
-/* Section 2 (Resume and Project) END */
-
-
-/* Section 3 (Resume and Project)  */
-#section-3{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: url(image/books.png) no-repeat;
-    background-position: right;
-    background-size: 40% 60%;
-    background-attachment: fixed;
-}
-
-#section-3 #resume, #section-2 #projects{
-    width: 50%;
-    margin: 0 auto;
-}
-
-#projects{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 5vw;
-    text-align: justify-All;
-    margin-left: 4vw;
+iframe{
+    width: 100%;
 }
 
 .projectbox{
-    box-shadow: 30px 30px 10px rgba(204, 204, 204, 0.7);
-    width: 250px;
-    padding: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-self: center;
-    height: 100%;
-    background: #fff;
-    text-align: center;
-    border-radius: 5px;
-    border: 2px solid rgba(204, 204, 204, 0.7);
-}
-
-.projectbox:hover{
-    box-shadow: 10px 10px 10px rgba(204, 204, 204, 0.8);
-    border: none;
-    transition: 1s;
-}
-
-.projectbox h4, .projectbox p{
-    margin: 0px;
-    padding: 5px;
-}
-
-.projectbox img{
-    height: 150px;
     width: 100%;
 }
-
-.tranpro1{
-    transform: translateY(-70px);
 }
 
-.tranpro2{
-    transform: translateY(-70px);
-}
+@media only screen and (max-width: 800px){
 
-hr{
-    width: 40px;
-    height: 3px;
-    background: rgb(83, 83, 83);
+#profileimg{
     border: none;
-}
-/* Section 3 (Resume and Project) END */
-
-
-/* section 4 (Certifications) */
-#section-4{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    
+    padding: 0px;
+    margin-top: 60px;
 }
 
-#certiBox{
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 50px;
-    text-align: center;
+#jd{
+    display: none;
 }
 
-.certimg{
-    margin: 0;
-    width: 350px;
-    text-decoration: underline;
-}
 
-.certimg img{
-    width: 100%;
-    height: 200px;
-}
-/* section 4 (Certifications) END*/
-
-
-@media screen and (max-width: 1100px){
-
-    section{
-        display: block;
-    }
-
-    #section-1{
-        flex-direction: column;
-    }
-
-    #txtslide{
-        height: 150px;
-        width: 100%;
-    }
-
-    #resumeBox{
-        width: 90%;
-    }
-
-    #section-3{
-        flex-direction: column;
-        height: auto;
-        background: none;
-    }
-
-    #section-3 #resume, #section-3 #projects{
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #projects{
-        margin: 0 auto;
-    }
-
-    .projectbox{
-        margin: 10px auto;
-    }
-
-    .tranpro1, .tranpro2{
-        transform: none;
-    }
-
-    #section-3{
-        padding-top: 20px;
-        height: auto;
-    }
-
-    #certiBox{
-        display: block;
-    }
-
-    .certimg{
-        margin-top: 15px;
-    }
-}
-@media screen and (max-width: 600px){
-    #navLink{
-        overflow: hidden;
-        display: block;
-        height: 0px;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        background: #fff;
-    }
-
-    #navbar:hover #navLink{
-       height: 100px;
-       transition: 1.5s;
-    }
-
-    #imgBox{
-        background: orange;
-    }
-
-    #profileImg{
-        height: 150px;
-        width: 150px;
-        box-shadow: 10px 10px 30px rgba(204, 204, 204, 0.7);
-    }
-
-    #resumeBox{
-        display: block;
-    }
-
-    #resumeBox h5{
-        margin-top: 5px;
-        padding-top: 1vw;
-        border-bottom: 2px solid rgba(204, 204, 204, 0.5);
-    }
-    #projects{
-        display: block;
-    }
-
-    .projectbox{
-        margin-top: 15px;
-    }
-    
 }
